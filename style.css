@@ -1,0 +1,33 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px 0;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+
+.main-container {
+  background-color: rgb(236, 207, 154);
+  box-shadow: 0px 5px 5px 3px rgb(116, 93, 51);
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.recipe-title {
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+.recipe-list-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.recipe-list {
+  margin: 0;
+}
