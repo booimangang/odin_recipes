@@ -1,5 +1,6 @@
-* {
+body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(236, 227, 212);
 }
 
 a {
@@ -16,53 +17,74 @@ ul {
   padding: 0;
 }
 
-img {
-  width: 40%;
-}
-
-.main-title,
+.title,
 .hero,
 .recipe-list-container {
-  padding: 20px;
+  padding: 25px 30px;
 }
 
-.main-container {
-  background-color: rgb(232, 193, 122);
-  box-shadow: 0px 5px 10px 5px rgb(73, 0, 1);
+header,
+.recipe-list-container,
+footer {
+  background-color: orange;
+}
+
+main {
+  box-shadow: 0px 5px 10px 5px rgb(0, 0, 0);
   width: 70%;
   margin: auto;
 }
 
-.main-title,
+.hero {
+  gap: 1em;
+  align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1514986888952-8cd320577b68?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80");
+  background-position: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: 3em;
+  height: 5em;
+  margin-right: 30px;
+}
+
+.title,
 .recipe-title {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-.main-title {
-  font-size: 45px;
+.title {
+  font-size: 40px;
 }
 
-.hero {
+.hero-body {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: rgb(236, 207, 154);
+  min-height: 80vh;
 }
 
-.main-desc {
-  margin-right: 5em;
-  font-size: 20px;
+.hero-body .hero-desc {
+  width: 100%;
+  /* margin-right: 5em; */
+  font-size: 23px;
 }
 
 .recipe-list-container {
+  min-height: 80vh;
   display: flex;
   justify-content: space-between;
-  margin: 30px 0;
+  /* margin: 30px 0; */
   align-items: center;
   font-size: 20px;
 }
 
-.recipe-list {
+.recipe-list-container > * {
   width: 40%;
 }
 
@@ -71,9 +93,14 @@ img {
 }
 
 footer {
-  background-color: rgb(216, 162, 60);
   font-weight: 600;
   display: flex;
-  justify-content: left;
-  padding: 20px;
+  justify-content: space-between;
+  background-color: rgb(222, 146, 6);
+  padding: 10px 30px;
+  align-items: flex-end;
+}
+
+footer img {
+  width: 100px;
 }
